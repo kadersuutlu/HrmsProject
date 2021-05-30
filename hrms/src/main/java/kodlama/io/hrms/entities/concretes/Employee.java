@@ -10,23 +10,27 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="job_title")
-public class JobTitle {
-	
+@Table(name="employees")
+public class Employee {
+
 	@Id
 	@GeneratedValue
 	@Column(name="id")
 	public int id;
 	
-	@Column(name="title")
-	public String title;
+	@Column(name="first_name")
+	public String firstName;
 	
-	public JobTitle() {}
-
-	public JobTitle(int id, String title) {
+	@Column(name="last_name")
+	public String lastName;
+	
+	public Employee() {}
+	
+	public Employee(int id, String firstName, String lastName) {
 		super();
 		this.id = id;
-		this.title = title;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
-	
+		
 }

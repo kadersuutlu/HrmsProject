@@ -1,5 +1,10 @@
 package kodlama.io.hrms.business.abstracts;
 
-public class CandidateService {
+import java.util.List;
 
+import kodlama.io.hrms.entities.concretes.Candidate;
+
+public interface CandidateService {
+	
+	List<Candidate> getAll();
 }

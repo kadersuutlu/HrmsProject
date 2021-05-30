@@ -1,5 +1,9 @@
 package kodlama.io.hrms.business.abstracts;
 
-public class JobTitleService {
+import java.util.List;
 
+import kodlama.io.hrms.entities.concretes.JobTitle;
+
+public interface JobTitleService {
+	List<JobTitle> getAll();
 }
